@@ -1,0 +1,666 @@
+@font-face {
+  font-family: 'HelveticaNew';
+  src: url(coolvetica_rg.ttf);
+}
+
+@font-face {
+    font-family: 'BabyDoll';
+    src: url(Baby_Doll.ttf)
+  }
+
+body {
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*navbar*/
+.logo{
+    float:left;
+    display:inline-block;
+    width:160px;
+    height:105px;
+}
+.navbar{
+
+    background-color: #C84361;
+    color:#ABCDCB;
+    text-align: center;
+    padding: 3px 57px;
+    position: sticky;
+    overflow: hidden;
+    top:0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+.navbar ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color:#EBE59B;
+    font-family: 'BabyDoll', sans-serif;
+}
+.navbar ul li a:hover{
+    color:#E78775;
+    
+}
+.navbar ul li i{
+    margin:3px;
+    color:#ABCDCB;
+}
+
+
+.searchbar{
+    border-radius: 8px;
+    overflow:hidden;
+}
+
+.searchbar i{
+    color: #ABCDCB;
+}
+
+
+/*content1*/
+
+
+.backdrop {
+    width: 100vw;
+    height: 100vh; /* Makes the backdrop image fit the screen height */
+    object-fit: cover;
+    position: relative; /* Ensures it's placed relative to the page layout */
+    z-index: 1;
+
+}
+
+.motto{
+  background-color: red;
+  background-image: linear-gradient(45deg, #bcfffb, #C84361);
+  
+  background-size: 100%;
+  background-repeat: repeat;
+
+  font-size: 55px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'HelveticaNew', sans-serif;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    margin-top: -10px; /* Adjusts the space between backdrop and content */
+    position: relative;
+    z-index: 2;
+    
+}
+
+/*content layout*/
+.content-layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Full width container */
+    padding: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 450px;
+    position: relative;
+    margin-right:10px;
+  }
+  
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    color:#f55278
+  }
+  
+ 
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: auto;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .slideimg{
+    box-shadow:  rgba(0,0,0,0.8) ;
+  }
+
+  .text{
+    color:#C84361;
+    font-family: 'BabyDoll', sans-serif;
+  }
+  
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  /*content text*/
+  .contenttext {
+    max-width: 45%; /* Text content takes up the other half */
+    float: none;
+    color: #C84361;
+    font-family: 'BabyDoll', sans-serif;
+}
+
+/*content 2*/
+
+.content2{
+    background-image: url(backdrop2.png);
+    background-repeat: no-repeat;
+    width:100%;
+    padding: 5px;
+    align-content: center;
+}
+
+.popularrelease{
+    background-color: red;
+    background-image: linear-gradient(45deg, #f55278, #f55278 );
+    
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'HelveticaNew', sans-serif;
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.popularrelease2{
+    background-color: red;
+    background-image: linear-gradient(45deg, #f55278, #f55278 );
+    
+    background-size: 100%;
+    background-repeat: repeat;
+    margin-top: 2px;
+  
+    font-size: 16px;
+    text-align: center;
+    font-family: 'BabyDoll', sans-serif;
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+/*cards*/
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+}
+
+.cardtitle{
+    color:#f55278;
+}
+
+.card1 {
+    position:static;
+    margin: 20px;
+    text-align:left;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 20px;
+  }
+  
+  .card1:hover {
+    box-shadow: 0 28px 28px 0 rgba(0,0,0,0.5);
+  }
+  
+  .card1 img{
+    width: 100%;
+    border-radius:5px;
+  }
+
+  .containercrd1 {
+    padding: 2px 18px;
+    font-family: 'BabyDoll', sans-serif;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .buttoncrd1{
+    background-color:#f55278;
+    color:#EBE59B;
+    padding:15px 30px;
+    text-align: center;
+    font-family: 'BabyDoll', sans-serif;
+    font-size: 15px;
+    display:inline-block;
+    margin:4px 2px;
+    border-radius: 10px;
+    cursor:pointer;
+    margin-bottom:20px;
+    border: none;
+
+  }
+
+  .buttoncrd1 a{
+    text-decoration: none;
+    color:inherit;
+  }
+
+
+  .card2 {
+    position:static;
+    margin: 20px;
+    text-align:left;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 20px;
+  }
+  
+  .card2:hover {
+    box-shadow: 0 28px 28px 0 rgba(0,0,0,0.5);
+  }
+  
+  .card2 img{
+    width: 100%;
+    border-radius:5px;
+  }
+
+  .containercrd2 {
+    padding: 2px 18px;
+    font-family: 'BabyDoll', sans-serif;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .buttoncrd2{
+    background-color:#f55278;
+    color:#EBE59B;
+    padding:15px 32px;
+    text-align: center;
+    font-family: 'BabyDoll', sans-serif;
+    font-size: 15px;
+    display:inline-block;
+    margin:4px 2px;
+    border-radius: 10px;
+    cursor:pointer;
+    margin-bottom:20px;
+    border: none;
+  }
+
+  .buttoncrd2 a{
+    text-decoration: none;
+    color:inherit;
+  }
+
+
+  .card3 {
+    position:static;
+    margin: 20px;
+    text-align:left;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 20px;
+  }
+  
+  .card3:hover {
+    box-shadow: 0 28px 28px 0 rgba(0,0,0,0.5);
+  }
+  
+  .card3 img{
+    width: 100%;
+    border-radius:5px;
+  }
+
+  .containercrd3 {
+    padding: 2px 18px;
+    font-family: 'BabyDoll', sans-serif;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .buttoncrd3{
+    background-color:#f55278;
+    color:#EBE59B;
+    padding:15px 32px;
+    text-align: center;
+    font-family: 'BabyDoll', sans-serif;
+    font-size: 15px;
+    display:inline-block;
+    margin:4px 2px;
+    border-radius: 10px;
+    cursor:pointer;
+    margin-bottom:20px;
+    border: none;
+  }
+
+  .buttoncrd3 a{
+    text-decoration: none;
+    color:inherit;
+  }
+
+/*content 3*/
+
+.content3{
+    background-color: #EBE59B;
+    align-content: center;
+    padding: 15px;
+}
+
+.reviewtitle{
+    background-color: red;
+    background-image: linear-gradient(45deg, #f55278, #f55278 );
+    
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'HelveticaNew', sans-serif;
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.reviewsub{
+    color: #f55278;
+    font-family: 'BabyDoll', sans-serif;
+}
+
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    margin:2px;
+  }
+  .testimonial-heading{
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .testimonial-heading span{
+    font-size: 40px;
+    color: #252525;
+    margin-bottom: 10px;
+  }
+  .testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+  }
+  .testimonial-box{
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+  }
+  .profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  .profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .profile{
+    display: flex;
+    align-items: center;
+  }
+  .name-user{
+    display: flex;
+    flex-direction: column;
+  }
+  .name-user strong{
+    color: #C84361;
+    font-family: 'BabyDoll', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+  .name-user span{
+    color: #979797;
+    font-family: 'BabyDoll', sans-serif;
+    font-size: 0.8rem;
+  }
+  .reviews{
+    color: #f9d71c;
+  }
+  .box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+    font-family: 'BabyDoll', sans-serif;
+  }
+  .testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+  }
+  
+  @media(max-width:1060px){
+    .testimonial-box{
+        width:45%;
+        padding: 10px;
+    }
+  }
+  @media(max-width:790px){
+    .testimonial-box{
+        width:100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+    }
+  }
+  @media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+  }
+  ::selection{
+    color: #ffffff;
+    background-color: #252525;
+  }
+
+
+/*content 4*/
+
+.content4{
+    text-align: center;
+}
+
+.letsgotext{
+
+        background-color: red;
+        background-image: linear-gradient(45deg, #bcfffb, #C84361);
+        
+        background-size: 100%;
+        background-repeat: repeat;
+      
+        font-size: 55px;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'HelveticaNew', sans-serif;
+      
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+      }
+
+.letsgobutton{
+
+        background-color:#f55278;
+        color:#EBE59B;
+        padding:40px 80px;
+        text-align: center;
+        font-family: 'BabyDoll', sans-serif;
+        font-size: 30px;
+        display:inline-block;
+        margin:4px 2px;
+        border-radius: 10px;
+        cursor:pointer;
+        margin-bottom:20px;
+        stroke: none;
+        border: none;
+}
+
+.letsgobutton a{
+    text-decoration: none;
+    color:inherit;
+  }
+
+footer {
+    padding: 5em;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f55278;
+ }
+
+ footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+ }
+
+ footer .logo{
+    margin-bottom: 30px;
+ }
+
+ footer h4{
+    font-size: 20px;
+    font-family: 'HelveticaNew', sans-serif;
+    color: #bcfffb;
+    padding-bottom: 20px;
+ }
+
+ footer p{
+    font-size: 13px;
+    font-family: 'BabyDoll', sans-serif;
+    margin: 0 0 8px 0;
+    color: #EBE59B;
+ }
+
+ footer a{
+    font-size: 13px;
+    text-decoration: none;
+    margin:0 0 8px 0;
+    color: #EBE59B;
+ }
+
+ footer .follow{
+    margin-top: 20px;
+ }
+
+ footer .follow i{
+    padding-right: 4px;
+    cursor: pointer;
+    color: #EBE59B;
+ }
+
+ footer .copyright {
+    width: 100%;
+    text-align: center;
+ }
+
+ footer .copyright p{
+    color: #252525;
+ }
