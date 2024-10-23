@@ -274,15 +274,13 @@ body {
     position:static;
     margin: 20px;
     text-align:left;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5);
+    border:#ABCDCB
     transition: 0.3s;
     width: 15%;
     border-radius: 20px;
   }
   
-  .card1:hover {
-    box-shadow: 0 28px 28px 0 rgba(0,0,0,0.5);
-  }
+
   
   .card1 img{
     width: 100%;
@@ -322,15 +320,13 @@ body {
     position:static;
     margin: 20px;
     text-align:left;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5);
+    border:#ABCDCB
     transition: 0.3s;
     width: 15%;
     border-radius: 20px;
   }
   
-  .card2:hover {
-    box-shadow: 0 28px 28px 0 rgba(0,0,0,0.5);
-  }
+
   
   .card2 img{
     width: 100%;
@@ -369,15 +365,12 @@ body {
     position:static;
     margin: 20px;
     text-align:left;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5);
+    border:#ABCDCB
     transition: 0.3s;
     width: 15%;
     border-radius: 20px;
   }
   
-  .card3:hover {
-    box-shadow: 0 28px 28px 0 rgba(0,0,0,0.5);
-  }
   
   .card3 img{
     width: 100%;
